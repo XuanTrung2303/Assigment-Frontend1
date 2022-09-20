@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: black;
+}
+#container{
+margin: 0 auto;
+width: 1500px;
+
+position: relative;
+
+}
+#container #formDK{
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    position: fixed;
+    padding: 202px;
+   
+}
+#container #formDK>.formDK2{
+    margin: 0 auto;
+    background-color: red;
+    top: 0px;
+    
+}
+/* Phần header */
+header{
+    width: 1500px;
+    height: 64px;
+    background-color: rgb(156, 45, 45);
+    position: relative;
+    top: 0px;
+}
+
+header>.sig-in{
+    width: 300px;
+
+    height: 60px;
+    float: right;
+    margin-right: 200px;
+}
+header>.search{
+    width: 800px;
+    height: 50px;
+  
+    float: right;
+}
+.search{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header>.search .input-box{
+    position: relative;
+    background: white;
+    padding: 15px;
+    border-radius: 45px;
+    width: 0px;
+    margin-left: 20px;
+    transition: 0.50s;
+    top: 6px;
+    
+}
+.search .input-box>input{
+    width: 100%;
+    background-color: transparent;
+    padding-right: 50px;
+    border:none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    text-align: left;
+    margin-left: 50px;
+}
+.search .input-box>input::placeholder{
+    color: rgb(170, 170, 170);
+    text-align: center;
+}
+.search .search-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(253, 251, 251);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 420px;
+    box-shadow: 0 0 0 10px rgb(0, 0, 255);
+    cursor: pointer;
+    margin-right: 330px;
+    top: 10px;
+}
+.search .search-button>img{
+    width: 22px;
+    height: 22px;
+}
+.search:hover>.input-box{
+    width: 700px;
+}
+header>.sig-in>button{
+    background-color: orangered;
+    width: 90px;
+    height: 55px;
+    border: 1px solid orangered;
+    color: white;
+    border-radius: 15px;
+    margin-right: 30px;
+    float: right;
+   margin-top: 3px;
+}
+header>.sig-in>button>a{
+    text-decoration: none;
+}
+header>button:active{
+    border: 1px solid orangered;
+    color: yellow;
+}
+header>button:hover{
+    border: 1px solid orangered;
+    color: green;
+}
+/* Phần menu */
+.container>.menu{
+    height: 500px;
+    width: 1500px;
+   
+    display: inline;
+}
+
+.menu>ul>li>a{
+    list-style: none;
+    height: 80px;
+
+}
+.menu>ul>li>a:hover{
+    color: red;
+    text-decoration: underline;
+  
+
+}
+.menu>ul>li{
+    display: inline-block;
+    position: relative;
+}
+.menu>ul>li>a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+    margin-left:  90px;
+    list-style: none;
+background-color: yellow;
+width: 196.7px;
+padding-top: 27px;
+   
+}
+.menu>ul{  
+    list-style: none;
+  position: relative;
+  top: 0px;   
+    background-image: url(../img/nen-logo-2.jpg);
+    background-size: 1500px;  
+    line-height: 40px;
+border: white;
+
+}
+
+
+.menu ul ul li{
+    border-bottom: 1px solid yellow;
+    
+}
+.menu ul ul{
+    position: absolute;
+    display: none;
+border: 1px solid yellow;
+    list-style: none;
+    border-radius: 3px;
+    width: 200px;
+    background-color: black;
+    box-shadow: 0 0 1px grey;
+    z-index: 100;
+    margin-left: 40px;
+ 
+}
+.menu ul ul a{
+    display: block;
+    line-height: 20px;
+    color: yellow;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 15px; 
+
+   
+}
+.menu>ul>li:hover>ul{
+    display: block;
+    
+}
+.menu ul ul a:hover{
+    background-color: orangered;
+    color: white;
+}
+/* article */
+.noi-dung{
+    width: 1000px;
+    height: 900px;
+    margin: 5px auto;
+   
+}
+.noi-dung>.noi-dung-top{
+    width: 1000px;
+    height: 450px;
+    border-bottom: 2px solid rgba(179, 179, 179, 0.699);
+   
+}
+.noi-dung>.noi-dung-top>.phim-1{
+    width: 350px;
+    height: 450px;
+    
+    float: left;
+   
+}
+.noi-dung>.noi-dung-top>.phim-1>img{
+    width: 330px;
+    height: 420px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px ;
+    
+    }
+.noi-dung>.noi-dung-top>.phim-2>.phim-2-bottom>p{
+        color: white;
+        text-align: justify;
+        font-size: 15.5px;
+}
+.noi-dung>.noi-dung-top>.phim-2>.phim-2-bottom>h4{
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: bold;
+}
+.noi-dung>.noi-dung-top>.phim-2>.phim-2-top>.phim-2-left>button{
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    
+}
+.noi-dung>.noi-dung-top>.phim-2{
+    width: 650px;
+    height: 450px;
+   
+    float: right;
+}
+.noi-dung>.noi-dung-top>.phim-2>.phim-2-top{
+    width: 650px;
+    height: 160px;
+   
+}
+.noi-dung>.noi-dung-top>.phim-2>.phim-2-top>.phim-2-left{
+    width: 400px;
+    height: 160px;
+    
+    float: left;
+}
+.noi-dung>.noi-dung-top>.phim-2>.phim-2-top>.phim-2-right{
+    width: 250px;
+    height: 160px;
+    
+    float: right;
+}
+.noi-dung>.noi-dung-top>.phim-2>.phim-2-bottom{
+    width: 650px;
+    height: 285px;
+    
+}
+.noi-dung>.noi-dung-top>.phim-2>.phim-2-top>.phim-2-left>h2{
+    font-weight: bold;
+    color: white;
+}
+.noi-dung>.noi-dung-bottom{
+    width: 1000px;
+    height: 280px;
+   
+    
+}
+.noi-dung>.noi-dung-bottom>.dien-vien{
+    width: 1000px;
+    height: 160px;
+   
+}
+.noi-dung>.noi-dung-bottom>button{
+    width: 85px;
+    height: 45px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(68, 67, 67);
+    background-color: rgb(68, 67, 67);
+    color: white;
+}
+.noi-dung>.noi-dung-bottom>button>:hover{
+    color: orangered;
+}
+/* footer */
+footer{
+    width: 1475px;
+    height: 170px;
+
+    background-color: yellow;
+    text-align: center;
+}
+.footer-left{
+    width: 1200px;
+    height: 170px;
+
+    float: left;
+}
+.footer-left>.footer-img{
+    width: 100px;
+    height: 170px;
+   
+    float: left;
+    margin-left: 10px;
+    
+}
+.footer-left>.footer-img>img{
+    padding-top: 10px;
+    width: 100%;
+}
+.footer-left>.footer-Text{
+    width: 1015px;
+    height: 170px;
+  
+    float: left;
+    margin-left: 45px;
+}
+.footer-left>.footer-Text>p{
+    text-align: justify;
+    margin-left: 105px;
+    margin-top: 10px;
+}
+.footer-right{
+    width: 275px;
+    height: 170px;
+
+    float: right;
+}
+.footer-right>button{
+    background-color: orangered;
+    width: 100px;
+    height: 50px;
+    border: 1px solid orangered;
+    border-radius: 7px;
+    margin-top: 10px;
+    color: white;
+}

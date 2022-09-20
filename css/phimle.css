@@ -1,0 +1,425 @@
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: black;
+}
+#container{
+margin: 0 auto;
+width: 1500px;
+
+position: relative;
+
+}
+#container #formDK{
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    position: fixed;
+    padding: 202px;
+   
+}
+#container #formDK>.formDK2{
+    margin: 0 auto;
+    background-color: red;
+    top: 0px;
+    
+}
+#container #formDK>.formDK2>.nhap{
+    width: 455px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+#container #formDK>.formDK2>.cancel>a>button{
+    width: 40px;
+    height: 30px;
+  
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+#container #formDK>.formDK2>.anh-nhap{
+    position: absolute;
+    top: 313px;
+    left: 513px;
+    border-radius: 5px ;
+}
+#container #formDK>.formDK2>.nhap-2{
+    width: 455px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+#container #formDK>.formDK2>.anh-nhap-2{
+    position: absolute;
+    top: 373px;
+    left: 513px;
+    border-radius: 5px;
+}
+/* Phần header */
+header{
+    width: 1500px;
+    height: 64px;
+    background-color: rgb(156, 45, 45);
+    position: relative;
+    top: 0px;
+}
+
+header>.sig-in{
+    width: 300px;
+
+    height: 60px;
+    float: right;
+    margin-right: 200px;
+}
+header>.search{
+    width: 800px;
+    height: 50px;
+  
+    float: right;
+}
+.search{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header>.search .input-box{
+    position: relative;
+    background: white;
+    padding: 15px;
+    border-radius: 45px;
+    width: 0px;
+    margin-left: 20px;
+    transition: 0.50s;
+    top: 6px;
+    
+}
+.search .input-box>input{
+    width: 100%;
+    background-color: transparent;
+    padding-right: 50px;
+    border:none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    text-align: left;
+    margin-left: 50px;
+}
+.search .input-box>input::placeholder{
+    color: rgb(170, 170, 170);
+    text-align: center;
+}
+.search .search-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(253, 251, 251);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 420px;
+    box-shadow: 0 0 0 10px rgb(0, 0, 255);
+    cursor: pointer;
+    margin-right: 330px;
+    top: 10px;
+}
+.search .search-button>img{
+    width: 22px;
+    height: 22px;
+}
+.search:hover>.input-box{
+    width: 700px;
+}
+header>.sig-in>button{
+    background-color: orangered;
+    width: 90px;
+    height: 55px;
+    border: 1px solid orangered;
+    color: white;
+    border-radius: 15px;
+    margin-right: 30px;
+    float: right;
+   margin-top: 3px;
+}
+header>.sig-in>button>a{
+    text-decoration: none;
+}
+header>button:active{
+    border: 1px solid orangered;
+    color: yellow;
+}
+header>button:hover{
+    border: 1px solid orangered;
+    color: green;
+}
+/* Phần menu */
+.container>.menu{
+    height: 500px;
+    width: 1500px;
+   
+    display: inline;
+}
+
+.menu>ul>li>a{
+    list-style: none;
+    height: 80px;
+
+}
+.menu>ul>li>a:hover{
+    color: red;
+    text-decoration: underline;
+  
+
+}
+.menu>ul>li{
+    display: inline-block;
+    position: relative;
+}
+.menu>ul>li>a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+    margin-left: 90px;
+    list-style: none;
+background-color: yellow;
+width: 196.7px;
+padding-top: 27px;
+   
+}
+.menu>ul{  
+    list-style: none;
+  position: relative;
+  top: 0px;   
+    background-image: url(../img/nen-logo-2.jpg);
+    background-size: 1500px;  
+    line-height: 40px;
+border: white;
+
+}
+
+
+.menu ul ul li{
+    border-bottom: 1px solid yellow;
+    
+}
+.menu ul ul{
+    position: absolute;
+    display: none;
+border: 1px solid yellow;
+    list-style: none;
+    border-radius: 3px;
+    width: 200px;
+    background-color: black;
+    box-shadow: 0 0 1px grey;
+    z-index: 100;
+    margin-left: 40px;
+ 
+}
+.menu ul ul a{
+    display: block;
+    line-height: 20px;
+    color: yellow;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    padding: 15px; 
+
+   
+}
+.menu>ul>li:hover>ul{
+    display: block;
+    
+}
+.menu ul ul a:hover{
+    background-color: orangered;
+    color: white;
+}
+/* phần article */
+article{
+    
+    width: 1250px;
+    height: 1250px;
+    margin: 10px auto;
+}
+.text-phim>h2{
+    text-decoration: none;
+    color: white;
+    border-bottom: 5px solid orangered;
+    width: 350px;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.text-phim{
+    height: 64px;
+    width: 50%;
+   
+    margin: auto;
+}
+.button-chuyen{
+    width: 350px;
+    height: 40px;
+    
+    margin: auto;
+}
+.button-chuyen>button{
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    display: inline;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.button-chuyen>button>a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.button-chuyen>button>a:hover{
+    color: red;
+}
+.box{
+    display: inline-block;
+    width: 290px;
+    height: 370px;
+    background-color: blueviolet;
+    margin-left: 15px;
+    position: relative;
+    margin-top: 7px;
+}
+.box>.imgBox{
+    overflow: hidden;
+    position: relative;
+}
+.box>.imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+    display: block;
+    height: 370px;
+    width: 290px;
+   
+}
+.box:hover .imgBox img{
+    transform: scale(1.2);
+}
+.box>.Text{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.527);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.box:hover .Text{
+    transform: scaleY(1);
+}
+.box>.Text>.Content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+.box>.Text>.Content>h3{
+   
+    font-weight: bold;
+    color: yellow;
+    padding-left: 25px;
+}
+.box>.Text>.Content>h4{
+    text-align: center;
+    padding-left: 25px;
+}
+.box>.Text>.Content>p{
+text-align: center;
+font-weight: bold;
+padding-left: 25px;
+}
+.box>.Text>.Content>button{
+    background-color: yellowgreen;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    height: 40px;
+    margin-left: 25px;
+    width: 150px;
+}
+.box>.Text>.Content>button>a{
+    text-decoration: none;
+}
+.box>.Text>.Content>button>a:hover{
+    color: blue;
+}
+/* phần Footer */
+footer{
+    width: 1475px;
+    height: 170px;
+
+    background-color: yellow;
+    text-align: center;
+}
+.footer-left{
+    width: 1200px;
+    height: 170px;
+
+    float: left;
+}
+.footer-left>.footer-img{
+    width: 100px;
+    height: 170px;
+   
+    float: left;
+    margin-left: 10px;
+    
+}
+.footer-left>.footer-img>img{
+    padding-top: 10px;
+    width: 100%;
+}
+.footer-left>.footer-Text{
+    width: 1015px;
+    height: 170px;
+  
+    float: left;
+    margin-left: 45px;
+}
+.footer-left>.footer-Text>p{
+    text-align: justify;
+    margin-left: 105px;
+    margin-top: 10px;
+}
+.footer-right{
+    width: 275px;
+    height: 170px;
+
+    float: right;
+}
+.footer-right>button{
+    background-color: orangered;
+    width: 100px;
+    height: 50px;
+    border: 1px solid orangered;
+    border-radius: 7px;
+    margin-top: 10px;
+    color: white;
+}

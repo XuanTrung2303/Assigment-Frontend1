@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+   color: yellow;
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+.main {
+  background-image: url(../img/nen-DK.jpg);
+  background-size: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.form {
+    width: 500px;
+    min-height: 100px;
+    padding: 32px 24px;
+    text-align: center;
+background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 2px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(17, 180, 221, 0.1);
+}
+.form .heading {
+    font-size: 2rem;
+}
+.form .desc {
+    text-align: center;
+    color: #1266bb;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #a3db08;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.form-control:hover {
+    border-color: #0ee919;
+}
+
+.form-group.invalid .form-control {
+    border-color: red;
+}
+
+.form-group.invalid .form-message {
+    color: white;
+}
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+.form-submit {
+    outline: none;
+    background-color: #290788;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #a89be0;
+}
+
+.spacer {
+    margin-top: 36px;
+}
